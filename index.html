@@ -199,8 +199,8 @@
 
 <!-- HERO -->
 <header class="hero">
-  <h1><span class="title-brand">AffectDF:</span> The Most Comprehensive Benchmark for Speech Deepfake Detection against Emotionally Expressive Attacks</h1>
-  <p class="hero-sub">A large-scale benchmark spanning 21 spoofing systems, five emotion conditions, and ~260 hours of data.</p>
+  <h1><span class="title-brand">AffectDF:</span> The Most Comprehensive Benchmark for Speech Deepfake Detection <em>against Emotionally Expressive Attacks</em></h1>
+  <p class="hero-sub">A large-scale benchmark spanning 21 spoofing systems, five emotion conditions, and diverse generation paradigms.</p>
   <p style="margin-top:14px; font-size:13px; color:var(--lavender-mid); font-style:italic; font-family:'Crimson Pro',serif;">Submitted to EMNLP 2026</p>
 </header>
 
@@ -261,13 +261,13 @@
   <div class="section">
     <div class="section-label">Speech Samples</div>
     <div class="section-title">AffectDF: Expressive Deepfake Audio Demo</div>
-    <p class="section-body">Listen to samples across emotion conditions for each spoofing system.</p>
+    <p class="section-body">Listen to samples across emotion conditions for each spoofing system, organized by Train / Dev / Test partition.</p>
 
     <div class="samples-wrap">
       <table class="samples-table">
         <thead>
           <tr>
-            <th style="text-align:left;">Model (Attack ID)</th>
+            <th style="text-align:left; min-width:200px;">Model (Attack ID)</th>
             <th>😐 Neutral</th>
             <th>😄 Happy</th>
             <th>😠 Angry</th>
@@ -276,211 +276,172 @@
           </tr>
         </thead>
         <tbody>
-
-          <!-- BONAFIDE -->
+          <!-- TRAIN -->
+          <tr><td colspan="6" style="background:var(--lavender-pale); font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--lavender-deep); padding:8px 16px; border:1px solid var(--border-light); text-align:center;">Train Partition</td></tr>
           <tr>
             <td><span class="row-label">Bonafide</span><br><span class="gen-type">Real Speech</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Neutral/Bonafide_Neutral_0011_000001.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Happy/Bonafide_Happy_0011_000701.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Angry/Bonafide_Angry_0011_000351.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Sad/Bonafide_Sad_0011_001051.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Surprise/Bonafide_Surprise_0011_001401.wav" type="audio/wav"></audio></td>
           </tr>
-
-          <!-- A01 -->
           <tr>
             <td><span class="row-label">Qwen 2.5-Omni</span><br><span class="attack-id">A01</span> <span class="gen-type">· LALM-EVC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Neutral/N2N_0011_0011_000001_Neutral_to_Neutral.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Happy/H2H_0011_0011_000701_Happy_to_Happy.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Angry/A2A_0011_0011_000351_Angry_to_Angry.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Sad/S2S_0011_0011_001051_Sad_to_Sad.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Surprise/Su2Su_0011_0011_001401_Surprise_to_Surprise.wav" type="audio/wav"></audio></td>
           </tr>
-          <!-- A02 -->
           <tr>
             <td><span class="row-label">Qwen 2.5-Omni (steered)</span><br><span class="attack-id">A02</span> <span class="gen-type">· LALM-EVC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
+            <td><span style="color:rgba(107,94,168,0.25);">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Happy/StH_H2H_0011_000701.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Angry/StA_A2A_0011_000351.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Sad/StS_S2S_0011_001051.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Surprise/StSu_Su2Su_0011_001401.wav" type="audio/wav"></audio></td>
           </tr>
-          <!-- A03 -->
           <tr>
             <td><span class="row-label">CosyVoice</span><br><span class="attack-id">A03</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Neutral/CV_0011_000001.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Happy/CV_0011_000701.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Angry/CV_0011_000351.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Sad/CV_0011_001051.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Surprise/CV_0011_001401.wav" type="audio/wav"></audio></td>
           </tr>
-          <!-- A04 -->
           <tr>
             <td><span class="row-label">CosyVoice2</span><br><span class="attack-id">A04</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Neutral/CV2_0011_000001.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Happy/CV2_0011_000701.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Angry/CV2_0011_000351.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Sad/CV2_0011_001051.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Surprise/CV2_0011_001401.wav" type="audio/wav"></audio></td>
           </tr>
-          <!-- A05 -->
           <tr>
             <td><span class="row-label">Qwen3-TTS</span><br><span class="attack-id">A05</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A06 -->
-          <tr>
-            <td><span class="row-label">MiniCPM</span><br><span class="attack-id">A06</span> <span class="gen-type">· LALM-EVC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A07 -->
-          <tr>
-            <td><span class="row-label">CosyVoice3</span><br><span class="attack-id">A07</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A08 -->
-          <tr>
-            <td><span class="row-label">Kimi-Audio</span><br><span class="attack-id">A08</span> <span class="gen-type">· LALM-EVC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A09 -->
-          <tr>
-            <td><span class="row-label">Kimi-Audio (steered)</span><br><span class="attack-id">A09</span> <span class="gen-type">· LALM-EVC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A10 -->
-          <tr>
-            <td><span class="row-label">Vevo2</span><br><span class="attack-id">A10</span> <span class="gen-type">· VC+EVC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A11 -->
-          <tr>
-            <td><span class="row-label">Vevo 2</span><br><span class="attack-id">A11</span> <span class="gen-type">· VC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A12 -->
-          <tr>
-            <td><span class="row-label">GenVC</span><br><span class="attack-id">A12</span> <span class="gen-type">· EVC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A13 -->
-          <tr>
-            <td><span class="row-label">GenVC</span><br><span class="attack-id">A13</span> <span class="gen-type">· VC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A14 -->
-          <tr>
-            <td><span class="row-label">GenVC</span><br><span class="attack-id">A14</span> <span class="gen-type">· VC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A15 -->
-          <tr>
-            <td><span class="row-label">ConsistencyVC</span><br><span class="attack-id">A15</span> <span class="gen-type">· VC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A16 -->
-          <tr>
-            <td><span class="row-label">TriAAN-VC</span><br><span class="attack-id">A16</span> <span class="gen-type">· VC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A17 -->
-          <tr>
-            <td><span class="row-label">DDDMVC</span><br><span class="attack-id">A17</span> <span class="gen-type">· VC</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A18 -->
-          <tr>
-            <td><span class="row-label">Style-TTS2</span><br><span class="attack-id">A18</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A19 -->
-          <tr>
-            <td><span class="row-label">Style-TTS2</span><br><span class="attack-id">A19</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A20 -->
-          <tr>
-            <td><span class="row-label">F5-TTS</span><br><span class="attack-id">A20</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-          </tr>
-          <!-- A21 -->
-          <tr>
-            <td><span class="row-label">F5-TTS</span><br><span class="attack-id">A21</span> <span class="gen-type">· TTS</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
-            <td><span class="audio-placeholder">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Neutral/q3tts_0011_000001.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Happy/q3tts_0011_000701.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Angry/q3tts_0011_000351.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Sad/q3tts_0011_001051.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Train_Group/Surprise/q3tts_0011_001401.wav" type="audio/wav"></audio></td>
           </tr>
 
+          <!-- DEV -->
+          <tr><td colspan="6" style="background:var(--lavender-pale); font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--lavender-deep); padding:8px 16px; border:1px solid var(--border-light); text-align:center;">Dev Partition</td></tr>
+          <tr>
+            <td><span class="row-label">Bonafide</span><br><span class="gen-type">Real Speech</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Neutral/Bonafide_Neutral_0013_000002.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Happy/Bonafide_Happy_0013_000702.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Angry/Bonafide_Angry_0013_000352.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Sad/Bonafide_Sad_0013_001052.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Surprise/Bonafide_Surprise_0013_001402.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">MiniCPM</span><br><span class="attack-id">A06</span> <span class="gen-type">· LALM-EVC</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Neutral/MCPM_N2N_0013_0013_000002_Neutral_to_Neutral.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Happy/MCPM_H2H_0013_0013_000702_Happy_to_Happy.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Angry/MCPM_A2A_0013_0013_000352_Angry_to_Angry.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Sad/MCPM_S2S_0013_0013_001052_Sad_to_Sad.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Surprise/MCPM_Su2Su_0013_0013_001402_Surprise_to_Surprise.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">CosyVoice3</span><br><span class="attack-id">A07</span> <span class="gen-type">· TTS</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Neutral/CV3_0013_000002.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Happy/CV3_0013_000702.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Angry/CV3_0013_000352.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Sad/CV3_0013_001052.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Dev_Group/Surprise/CV3_0013_001402.wav" type="audio/wav"></audio></td>
+          </tr>
+
+          <!-- TEST (ESD) -->
+          <tr><td colspan="6" style="background:var(--lavender-pale); font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--lavender-deep); padding:8px 16px; border:1px solid var(--border-light); text-align:center;">Test Partition (ESD)</td></tr>
+          <tr>
+            <td><span class="row-label">Bonafide</span><br><span class="gen-type">Real Speech</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Neutral/Bonafide_Neutral_0014_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Happy/Bonafide_Happy_0014_000703.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Angry/Bonafide_Angry_0014_000353.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Sad/Bonafide_Sad_0014_001053.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Surprise/Bonafide_Surprise_0018_001403.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">Kimi-Audio</span><br><span class="attack-id">A08</span> <span class="gen-type">· LALM-EVC</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Neutral/kimi_N2N_0014_0014_000003_Neutral_to_Neutral.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Happy/kimi_H2H_0014_0014_000703_Happy_to_Happy.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Angry/kimi_A2A_0014_0014_000353_Angry_to_Angry.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Sad/kimi_S2S_0014_0014_001053_Sad_to_Sad.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Surprise/kimi_Su2Su_0018_0018_001403_Surprise_to_Surprise.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">Kimi-Audio (steered)</span><br><span class="attack-id">A09</span> <span class="gen-type">· LALM-EVC</span></td>
+            <td><span style="color:rgba(107,94,168,0.25);">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Happy/stH_kimi_H2H_0014_000703.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Angry/stA_kimi_A2A_0014_000353.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Sad/stS_kimi_S2S_0014_001053.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Surprise/stSu_kimi_Su2Su_0018_001403.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">GenVC</span><br><span class="attack-id">A12</span> <span class="gen-type">· EVC</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Neutral/genevc_N2A_0014_000003__ref_0014_000357.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Happy/genevc_H2A_0014_000703__ref_0014_000559.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Angry/genevc_A2H_0014_000353__ref_0014_000786.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Sad/genevc_S2Su_0014_001053__ref_0014_001456.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Surprise/genevc_Su2A_0018_001403__ref_0018_000653.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">ConsistencyVC</span><br><span class="attack-id">A15</span> <span class="gen-type">· VC</span></td>
+            <td><span style="color:rgba(107,94,168,0.25);">–</span></td>
+            <td><span style="color:rgba(107,94,168,0.25);">–</span></td>
+            <td><span style="color:rgba(107,94,168,0.25);">–</span></td>
+            <td><span style="color:rgba(107,94,168,0.25);">–</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Surprise/con_Su_src_0018_001403_ref_0020_000501_converted.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">Style-TTS2</span><br><span class="attack-id">A18</span> <span class="gen-type">· TTS</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Neutral/stts2_N_0014_000003t1.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Happy/stts2_H_0014_000703t1.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Angry/stts2_A_0014_000353t1.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Sad/stts2_S_0014_001053t1.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Surprise/stts2_Su_0018_001403_gen.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">F5-TTS</span><br><span class="attack-id">A20</span> <span class="gen-type">· TTS</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Neutral/f5_N_0014_000003t2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Happy/f5_H_0014_000703t2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Angry/f5_A_0014_000353t2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Sad/f5_S_0014_001053t2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/Test_Group/Surprise/f5_Su_0018_001403.wav" type="audio/wav"></audio></td>
+          </tr>
+
+          <!-- TEST (MSP) -->
+          <tr><td colspan="6" style="background:var(--lavender-pale); font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--lavender-deep); padding:8px 16px; border:1px solid var(--border-light); text-align:center;">Test Partition (MSP-Podcast)</td></tr>
+          <tr>
+            <td><span class="row-label">Bonafide</span><br><span class="gen-type">Real Speech</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Neutral/Bonafide_Neutral_genvcmsp_94_N_MSP-PODCAST_1827_0026__ref_MSP-PODCAST_0210_0272.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Happy/Bonafide_Happy_genvcmsp_94_H_MSP-PODCAST_1825_0700__ref_MSP-PODCAST_0368_0555.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Angry/Bonafide_Angry_MSP_F5_1115_A_MSP-PODCAST_1825_0519.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Sad/Bonafide_Sad_MSP_F5_1115_S_MSP-PODCAST_1825_0944.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Surprise/Bonafide_Surprise_genvcmsp_94_Su_MSP-PODCAST_1828_0298__ref_MSP-PODCAST_0368_1232.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">Style-TTS2</span><br><span class="attack-id">A19</span> <span class="gen-type">· TTS</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Neutral/MSP_ST_1115_N_MSP-PODCAST_1827_0026.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Happy/MSP_ST_1115_H_MSP-PODCAST_1825_0700.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Angry/MSP_ST_1115_A_MSP-PODCAST_1825_0519.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Sad/MSP_ST_1115_S_MSP-PODCAST_1825_0944.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Surprise/MSP_ST_1115_Su_MSP-PODCAST_1828_0298.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span class="row-label">F5-TTS</span><br><span class="attack-id">A21</span> <span class="gen-type">· TTS</span></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Neutral/MSP_F5_1115_N_MSP-PODCAST_1827_0026.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Happy/MSP_F5_1115_H_MSP-PODCAST_1825_0700.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Angry/MSP_F5_1115_A_MSP-PODCAST_1825_0519.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Sad/MSP_F5_1115_S_MSP-PODCAST_1825_0944.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width:120px;height:28px;"><source src="https://raw.githubusercontent.com/affectdf33-data/AffectDF-Data/main/samples_affectDF_dwn/MSP_Group/Surprise/MSP_F5_1115_Su_MSP-PODCAST_1828_0298.wav" type="audio/wav"></audio></td>
+          </tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:12px; color:var(--text-muted); margin-top:12px;">Audio samples will be linked once uploaded. Dashes (–) mark placeholder slots.</p>
   </div>
 </section>
 
@@ -606,7 +567,7 @@
     <div class="section-label">Analysis & Results</div>
     <div class="section-title">Additional Analysis</div>
     <div class="section-body">
-      <p>Scores</p>
+      <p>Detailed per-system, per-emotion evaluation results, EER curves, and cross-corpus generalization analysis will appear here.</p>
     </div>
     <div class="figure-box" style="margin-top:28px;">
       <svg class="fig-icon" viewBox="0 0 40 40" fill="none">
