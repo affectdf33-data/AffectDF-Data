@@ -1,0 +1,90 @@
+Group	FolderEmotion	AudioID	AttackID	ProtocolSpeaker	ProtocolEmotion	AttackType	Model	Label	ProtocolFile	RelativePath
+Dev_Group	Angry	Bonafide_Angry_0013_000352	bonafide		Angry	Real	Bonafide	bonafide	real_audio	Dev_Group/Angry/Bonafide_Angry_0013_000352.wav
+Dev_Group	Angry	CV3_0013_000352	A07	0013	Angry	TTS	CosyVoice3	spoof	dev_protocol.txt	Dev_Group/Angry/CV3_0013_000352.wav
+Dev_Group	Angry	MCPM_A2A_0013_0013_000352_Angry_to_Angry	A06	0013	Angry	EVC	MiniCPM-o-4_5	spoof	dev_protocol.txt	Dev_Group/Angry/MCPM_A2A_0013_0013_000352_Angry_to_Angry.wav
+Dev_Group	Happy	Bonafide_Happy_0013_000702	bonafide		Happy	Real	Bonafide	bonafide	real_audio	Dev_Group/Happy/Bonafide_Happy_0013_000702.wav
+Dev_Group	Happy	CV3_0013_000702	A07	0013	Happy	TTS	CosyVoice3	spoof	dev_protocol.txt	Dev_Group/Happy/CV3_0013_000702.wav
+Dev_Group	Happy	MCPM_H2H_0013_0013_000702_Happy_to_Happy	A06	0013	Happy	EVC	MiniCPM-o-4_5	spoof	dev_protocol.txt	Dev_Group/Happy/MCPM_H2H_0013_0013_000702_Happy_to_Happy.wav
+Dev_Group	Neutral	Bonafide_Neutral_0013_000002	bonafide		Neutral	Real	Bonafide	bonafide	real_audio	Dev_Group/Neutral/Bonafide_Neutral_0013_000002.wav
+Dev_Group	Neutral	CV3_0013_000002	A07	0013	Neutral	TTS	CosyVoice3	spoof	dev_protocol.txt	Dev_Group/Neutral/CV3_0013_000002.wav
+Dev_Group	Neutral	MCPM_N2N_0013_0013_000002_Neutral_to_Neutral	A06	0013	Neutral	EVC	MiniCPM-o-4_5	spoof	dev_protocol.txt	Dev_Group/Neutral/MCPM_N2N_0013_0013_000002_Neutral_to_Neutral.wav
+Dev_Group	Sad	Bonafide_Sad_0013_001052	bonafide		Sad	Real	Bonafide	bonafide	real_audio	Dev_Group/Sad/Bonafide_Sad_0013_001052.wav
+Dev_Group	Sad	CV3_0013_001052	A07	0013	Sad	TTS	CosyVoice3	spoof	dev_protocol.txt	Dev_Group/Sad/CV3_0013_001052.wav
+Dev_Group	Sad	MCPM_S2S_0013_0013_001052_Sad_to_Sad	A06	0013	Sad	EVC	MiniCPM-o-4_5	spoof	dev_protocol.txt	Dev_Group/Sad/MCPM_S2S_0013_0013_001052_Sad_to_Sad.wav
+Dev_Group	Surprise	Bonafide_Surprise_0013_001402	bonafide		Surprise	Real	Bonafide	bonafide	real_audio	Dev_Group/Surprise/Bonafide_Surprise_0013_001402.wav
+Dev_Group	Surprise	CV3_0013_001402	A07	0013	Surprise	TTS	CosyVoice3	spoof	dev_protocol.txt	Dev_Group/Surprise/CV3_0013_001402.wav
+Dev_Group	Surprise	MCPM_Su2Su_0013_0013_001402_Surprise_to_Surprise	A06	0013	Surprise	EVC	MiniCPM-o-4_5	spoof	dev_protocol.txt	Dev_Group/Surprise/MCPM_Su2Su_0013_0013_001402_Surprise_to_Surprise.wav
+MSP_Group	Angry	Bonafide_Angry_MSP_F5_1115_A_MSP-PODCAST_1825_0519	bonafide		Angry	Real	Bonafide	bonafide	real_audio	MSP_Group/Angry/Bonafide_Angry_MSP_F5_1115_A_MSP-PODCAST_1825_0519.wav
+MSP_Group	Angry	MSP_F5_1115_A_MSP-PODCAST_1825_0519	A21	1115	Angry	TTS	F5-TTS-MSP	spoof	test_protocol.txt	MSP_Group/Angry/MSP_F5_1115_A_MSP-PODCAST_1825_0519.wav
+MSP_Group	Angry	MSP_ST_1115_A_MSP-PODCAST_1825_0519	A19	1115	Angry	TTS	StyleTTS2-MSP	spoof	test_protocol.txt	MSP_Group/Angry/MSP_ST_1115_A_MSP-PODCAST_1825_0519.wav
+MSP_Group	Happy	Bonafide_Happy_genvcmsp_94_H_MSP-PODCAST_1825_0700__ref_MSP-PODCAST_0368_0555	bonafide		Happy	Real	Bonafide	bonafide	real_audio	MSP_Group/Happy/Bonafide_Happy_genvcmsp_94_H_MSP-PODCAST_1825_0700__ref_MSP-PODCAST_0368_0555.wav
+MSP_Group	Happy	MSP_F5_1115_H_MSP-PODCAST_1825_0700	A21	1115	Happy	TTS	F5-TTS-MSP	spoof	test_protocol.txt	MSP_Group/Happy/MSP_F5_1115_H_MSP-PODCAST_1825_0700.wav
+MSP_Group	Happy	MSP_ST_1115_H_MSP-PODCAST_1825_0700	A19	1115	Happy	TTS	StyleTTS2-MSP	spoof	test_protocol.txt	MSP_Group/Happy/MSP_ST_1115_H_MSP-PODCAST_1825_0700.wav
+MSP_Group	Neutral	Bonafide_Neutral_genvcmsp_94_N_MSP-PODCAST_1827_0026__ref_MSP-PODCAST_0210_0272	bonafide		Neutral	Real	Bonafide	bonafide	real_audio	MSP_Group/Neutral/Bonafide_Neutral_genvcmsp_94_N_MSP-PODCAST_1827_0026__ref_MSP-PODCAST_0210_0272.wav
+MSP_Group	Neutral	MSP_F5_1115_N_MSP-PODCAST_1827_0026	A21	1115	Neutral	TTS	F5-TTS-MSP	spoof	test_protocol.txt	MSP_Group/Neutral/MSP_F5_1115_N_MSP-PODCAST_1827_0026.wav
+MSP_Group	Neutral	MSP_ST_1115_N_MSP-PODCAST_1827_0026	A19	1115	Neutral	TTS	StyleTTS2-MSP	spoof	test_protocol.txt	MSP_Group/Neutral/MSP_ST_1115_N_MSP-PODCAST_1827_0026.wav
+MSP_Group	Sad	Bonafide_Sad_MSP_F5_1115_S_MSP-PODCAST_1825_0944	bonafide		Sad	Real	Bonafide	bonafide	real_audio	MSP_Group/Sad/Bonafide_Sad_MSP_F5_1115_S_MSP-PODCAST_1825_0944.wav
+MSP_Group	Sad	MSP_F5_1115_S_MSP-PODCAST_1825_0944	A21	1115	Sad	TTS	F5-TTS-MSP	spoof	test_protocol.txt	MSP_Group/Sad/MSP_F5_1115_S_MSP-PODCAST_1825_0944.wav
+MSP_Group	Sad	MSP_ST_1115_S_MSP-PODCAST_1825_0944	A19	1115	Sad	TTS	StyleTTS2-MSP	spoof	test_protocol.txt	MSP_Group/Sad/MSP_ST_1115_S_MSP-PODCAST_1825_0944.wav
+MSP_Group	Surprise	Bonafide_Surprise_genvcmsp_94_Su_MSP-PODCAST_1828_0298__ref_MSP-PODCAST_0368_1232	bonafide		Surprise	Real	Bonafide	bonafide	real_audio	MSP_Group/Surprise/Bonafide_Surprise_genvcmsp_94_Su_MSP-PODCAST_1828_0298__ref_MSP-PODCAST_0368_1232.wav
+MSP_Group	Surprise	MSP_F5_1115_Su_MSP-PODCAST_1828_0298	A21	1115	Surprise	TTS	F5-TTS-MSP	spoof	test_protocol.txt	MSP_Group/Surprise/MSP_F5_1115_Su_MSP-PODCAST_1828_0298.wav
+MSP_Group	Surprise	MSP_ST_1115_Su_MSP-PODCAST_1828_0298	A19	1115	Surprise	TTS	StyleTTS2-MSP	spoof	test_protocol.txt	MSP_Group/Surprise/MSP_ST_1115_Su_MSP-PODCAST_1828_0298.wav
+Test_Group	Angry	Bonafide_Angry_0014_000353	bonafide		Angry	Real	Bonafide	bonafide	real_audio	Test_Group/Angry/Bonafide_Angry_0014_000353.wav
+Test_Group	Angry	f5_A_0014_000353t2	A20	0014	Angry	TTS	F5-TTS	spoof	test_protocol.txt	Test_Group/Angry/f5_A_0014_000353t2.wav
+Test_Group	Angry	genevc_A2H_0014_000353__ref_0014_000786	A12	0014	Angry	EVC	GenVC	spoof	test_protocol.txt	Test_Group/Angry/genevc_A2H_0014_000353__ref_0014_000786.wav
+Test_Group	Angry	kimi_A2A_0014_0014_000353_Angry_to_Angry	A08	0014	Angry	EVC	Kimi-Audio	spoof	test_protocol.txt	Test_Group/Angry/kimi_A2A_0014_0014_000353_Angry_to_Angry.wav
+Test_Group	Angry	stA_kimi_A2A_0014_000353	A09	0014	Angry	EVC	Kimi-Audio-steered	spoof	test_protocol.txt	Test_Group/Angry/stA_kimi_A2A_0014_000353.wav
+Test_Group	Angry	stts2_A_0014_000353t1	A18	0014	Angry	TTS	StyleTTS2	spoof	test_protocol.txt	Test_Group/Angry/stts2_A_0014_000353t1.wav
+Test_Group	Happy	Bonafide_Happy_0014_000703	bonafide		Happy	Real	Bonafide	bonafide	real_audio	Test_Group/Happy/Bonafide_Happy_0014_000703.wav
+Test_Group	Happy	f5_H_0014_000703t2	A20	0014	Happy	TTS	F5-TTS	spoof	test_protocol.txt	Test_Group/Happy/f5_H_0014_000703t2.wav
+Test_Group	Happy	genevc_H2A_0014_000703__ref_0014_000559	A12	0014	Happy	EVC	GenVC	spoof	test_protocol.txt	Test_Group/Happy/genevc_H2A_0014_000703__ref_0014_000559.wav
+Test_Group	Happy	kimi_H2H_0014_0014_000703_Happy_to_Happy	A08	0014	Happy	EVC	Kimi-Audio	spoof	test_protocol.txt	Test_Group/Happy/kimi_H2H_0014_0014_000703_Happy_to_Happy.wav
+Test_Group	Happy	stH_kimi_H2H_0014_000703	A09	0014	Happy	EVC	Kimi-Audio-steered	spoof	test_protocol.txt	Test_Group/Happy/stH_kimi_H2H_0014_000703.wav
+Test_Group	Happy	stts2_H_0014_000703t1	A18	0014	Happy	TTS	StyleTTS2	spoof	test_protocol.txt	Test_Group/Happy/stts2_H_0014_000703t1.wav
+Test_Group	Neutral	Bonafide_Neutral_0014_000003	bonafide		Neutral	Real	Bonafide	bonafide	real_audio	Test_Group/Neutral/Bonafide_Neutral_0014_000003.wav
+Test_Group	Neutral	f5_N_0014_000003t2	A20	0014	Neutral	TTS	F5-TTS	spoof	test_protocol.txt	Test_Group/Neutral/f5_N_0014_000003t2.wav
+Test_Group	Neutral	genevc_N2A_0014_000003__ref_0014_000357	A12	0014	Neutral	EVC	GenVC	spoof	test_protocol.txt	Test_Group/Neutral/genevc_N2A_0014_000003__ref_0014_000357.wav
+Test_Group	Neutral	kimi_N2N_0014_0014_000003_Neutral_to_Neutral	A08	0014	Neutral	EVC	Kimi-Audio	spoof	test_protocol.txt	Test_Group/Neutral/kimi_N2N_0014_0014_000003_Neutral_to_Neutral.wav
+Test_Group	Neutral	stts2_N_0014_000003t1	A18	0014	Neutral	TTS	StyleTTS2	spoof	test_protocol.txt	Test_Group/Neutral/stts2_N_0014_000003t1.wav
+Test_Group	Sad	Bonafide_Sad_0014_001053	bonafide		Sad	Real	Bonafide	bonafide	real_audio	Test_Group/Sad/Bonafide_Sad_0014_001053.wav
+Test_Group	Sad	f5_S_0014_001053t2	A20	0014	Sad	TTS	F5-TTS	spoof	test_protocol.txt	Test_Group/Sad/f5_S_0014_001053t2.wav
+Test_Group	Sad	genevc_S2Su_0014_001053__ref_0014_001456	A12	0014	Sad	EVC	GenVC	spoof	test_protocol.txt	Test_Group/Sad/genevc_S2Su_0014_001053__ref_0014_001456.wav
+Test_Group	Sad	kimi_S2S_0014_0014_001053_Sad_to_Sad	A08	0014	Sad	EVC	Kimi-Audio	spoof	test_protocol.txt	Test_Group/Sad/kimi_S2S_0014_0014_001053_Sad_to_Sad.wav
+Test_Group	Sad	stS_kimi_S2S_0014_001053	A09	0014	Sad	EVC	Kimi-Audio-steered	spoof	test_protocol.txt	Test_Group/Sad/stS_kimi_S2S_0014_001053.wav
+Test_Group	Sad	stts2_S_0014_001053t1	A18	0014	Sad	TTS	StyleTTS2	spoof	test_protocol.txt	Test_Group/Sad/stts2_S_0014_001053t1.wav
+Test_Group	Surprise	Bonafide_Surprise_0018_001403	bonafide		Surprise	Real	Bonafide	bonafide	real_audio	Test_Group/Surprise/Bonafide_Surprise_0018_001403.wav
+Test_Group	Surprise	con_Su_src_0018_001403_ref_0020_000501_converted	A15	0020	Surprise	VC	ConsistencyVC	spoof	test_protocol.txt	Test_Group/Surprise/con_Su_src_0018_001403_ref_0020_000501_converted.wav
+Test_Group	Surprise	f5_Su_0018_001403	A20	0018	Surprise	TTS	F5-TTS	spoof	test_protocol.txt	Test_Group/Surprise/f5_Su_0018_001403.wav
+Test_Group	Surprise	genevc_Su2A_0018_001403__ref_0018_000653	A12	0018	Surprise	EVC	GenVC	spoof	test_protocol.txt	Test_Group/Surprise/genevc_Su2A_0018_001403__ref_0018_000653.wav
+Test_Group	Surprise	kimi_Su2Su_0018_0018_001403_Surprise_to_Surprise	A08	0018	Surprise	EVC	Kimi-Audio	spoof	test_protocol.txt	Test_Group/Surprise/kimi_Su2Su_0018_0018_001403_Surprise_to_Surprise.wav
+Test_Group	Surprise	stSu_kimi_Su2Su_0018_001403	A09	0018	Surprise	EVC	Kimi-Audio-steered	spoof	test_protocol.txt	Test_Group/Surprise/stSu_kimi_Su2Su_0018_001403.wav
+Test_Group	Surprise	stts2_Su_0018_001403_gen	A18	0018	Surprise	TTS	StyleTTS2	spoof	test_protocol.txt	Test_Group/Surprise/stts2_Su_0018_001403_gen.wav
+Train_Group	Angry	A2A_0011_0011_000351_Angry_to_Angry	A01	0011	Angry	EVC	Qwen2.5-Omni	spoof	train_protocol.txt	Train_Group/Angry/A2A_0011_0011_000351_Angry_to_Angry.wav
+Train_Group	Angry	Bonafide_Angry_0011_000351	bonafide		Angry	Real	Bonafide	bonafide	real_audio	Train_Group/Angry/Bonafide_Angry_0011_000351.wav
+Train_Group	Angry	CV2_0011_000351	A04	0011	Angry	TTS	CosyVoice2	spoof	train_protocol.txt	Train_Group/Angry/CV2_0011_000351.wav
+Train_Group	Angry	CV_0011_000351	A03	0011	Angry	TTS	CosyVoice	spoof	train_protocol.txt	Train_Group/Angry/CV_0011_000351.wav
+Train_Group	Angry	StA_A2A_0011_000351	A02	0011	Angry	EVC	Qwen2.5-Omni-steered	spoof	train_protocol.txt	Train_Group/Angry/StA_A2A_0011_000351.wav
+Train_Group	Angry	q3tts_0011_000351	A05	0011	Angry	TTS	Qwen3-TTS	spoof	train_protocol.txt	Train_Group/Angry/q3tts_0011_000351.wav
+Train_Group	Happy	Bonafide_Happy_0011_000701	bonafide		Happy	Real	Bonafide	bonafide	real_audio	Train_Group/Happy/Bonafide_Happy_0011_000701.wav
+Train_Group	Happy	CV2_0011_000701	A04	0011	Happy	TTS	CosyVoice2	spoof	train_protocol.txt	Train_Group/Happy/CV2_0011_000701.wav
+Train_Group	Happy	CV_0011_000701	A03	0011	Happy	TTS	CosyVoice	spoof	train_protocol.txt	Train_Group/Happy/CV_0011_000701.wav
+Train_Group	Happy	H2H_0011_0011_000701_Happy_to_Happy	A01	0011	Happy	EVC	Qwen2.5-Omni	spoof	train_protocol.txt	Train_Group/Happy/H2H_0011_0011_000701_Happy_to_Happy.wav
+Train_Group	Happy	StH_H2H_0011_000701	A02	0011	Happy	EVC	Qwen2.5-Omni-steered	spoof	train_protocol.txt	Train_Group/Happy/StH_H2H_0011_000701.wav
+Train_Group	Happy	q3tts_0011_000701	A05	0011	Happy	TTS	Qwen3-TTS	spoof	train_protocol.txt	Train_Group/Happy/q3tts_0011_000701.wav
+Train_Group	Neutral	Bonafide_Neutral_0011_000001	bonafide		Neutral	Real	Bonafide	bonafide	real_audio	Train_Group/Neutral/Bonafide_Neutral_0011_000001.wav
+Train_Group	Neutral	CV2_0011_000001	A04	0011	Neutral	TTS	CosyVoice2	spoof	train_protocol.txt	Train_Group/Neutral/CV2_0011_000001.wav
+Train_Group	Neutral	CV_0011_000001	A03	0011	Neutral	TTS	CosyVoice	spoof	train_protocol.txt	Train_Group/Neutral/CV_0011_000001.wav
+Train_Group	Neutral	N2N_0011_0011_000001_Neutral_to_Neutral	A01	0011	Neutral	EVC	Qwen2.5-Omni	spoof	train_protocol.txt	Train_Group/Neutral/N2N_0011_0011_000001_Neutral_to_Neutral.wav
+Train_Group	Neutral	q3tts_0011_000001	A05	0011	Neutral	TTS	Qwen3-TTS	spoof	train_protocol.txt	Train_Group/Neutral/q3tts_0011_000001.wav
+Train_Group	Sad	Bonafide_Sad_0011_001051	bonafide		Sad	Real	Bonafide	bonafide	real_audio	Train_Group/Sad/Bonafide_Sad_0011_001051.wav
+Train_Group	Sad	CV2_0011_001051	A04	0011	Sad	TTS	CosyVoice2	spoof	train_protocol.txt	Train_Group/Sad/CV2_0011_001051.wav
+Train_Group	Sad	CV_0011_001051	A03	0011	Sad	TTS	CosyVoice	spoof	train_protocol.txt	Train_Group/Sad/CV_0011_001051.wav
+Train_Group	Sad	S2S_0011_0011_001051_Sad_to_Sad	A01	0011	Sad	EVC	Qwen2.5-Omni	spoof	train_protocol.txt	Train_Group/Sad/S2S_0011_0011_001051_Sad_to_Sad.wav
+Train_Group	Sad	StS_S2S_0011_001051	A02	0011	Sad	EVC	Qwen2.5-Omni-steered	spoof	train_protocol.txt	Train_Group/Sad/StS_S2S_0011_001051.wav
+Train_Group	Sad	q3tts_0011_001051	A05	0011	Sad	TTS	Qwen3-TTS	spoof	train_protocol.txt	Train_Group/Sad/q3tts_0011_001051.wav
+Train_Group	Surprise	Bonafide_Surprise_0011_001401	bonafide		Surprise	Real	Bonafide	bonafide	real_audio	Train_Group/Surprise/Bonafide_Surprise_0011_001401.wav
+Train_Group	Surprise	CV2_0011_001401	A04	0011	Surprise	TTS	CosyVoice2	spoof	train_protocol.txt	Train_Group/Surprise/CV2_0011_001401.wav
+Train_Group	Surprise	CV_0011_001401	A03	0011	Surprise	TTS	CosyVoice	spoof	train_protocol.txt	Train_Group/Surprise/CV_0011_001401.wav
+Train_Group	Surprise	StSu_Su2Su_0011_001401	A02	0011	Surprise	EVC	Qwen2.5-Omni-steered	spoof	train_protocol.txt	Train_Group/Surprise/StSu_Su2Su_0011_001401.wav
+Train_Group	Surprise	Su2Su_0011_0011_001401_Surprise_to_Surprise	A01	0011	Surprise	EVC	Qwen2.5-Omni	spoof	train_protocol.txt	Train_Group/Surprise/Su2Su_0011_0011_001401_Surprise_to_Surprise.wav
+Train_Group	Surprise	q3tts_0011_001401	A05	0011	Surprise	TTS	Qwen3-TTS	spoof	train_protocol.txt	Train_Group/Surprise/q3tts_0011_001401.wav

@@ -1,0 +1,6 @@
+emotion,protocol_spk,msp_source_id,sample_id,attack_id,reason
+Neutral,1115,MSP-PODCAST_1827_0026,,A14,protocol row missing
+Happy,1115,MSP-PODCAST_1825_0700,,A14,protocol row missing
+Angry,1115,MSP-PODCAST_1825_0519,,A14,protocol row missing
+Sad,1115,MSP-PODCAST_1825_0944,,A14,protocol row missing
+Surprise,1115,MSP-PODCAST_1828_0298,,A14,protocol row missing
