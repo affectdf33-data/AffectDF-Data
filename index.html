@@ -414,21 +414,8 @@
     <div class="section-label">Analysis & Results</div>
     <div class="section-title">Benchmark Evaluation Results</div>
 
-    <!-- Key Findings -->
-    <div class="findings-grid">
-      <div class="finding-card">
-        <p><strong>Emotion breaks cross-domain generalization.</strong> Models trained on ASVspoof2019 degrade severely on AffectDF — RawNet2 and AASIST reach 59.71% and 56.40% EER respectively, approaching near-random performance under emotional spoofing conditions.</p>
-      </div>
-      <div class="finding-card">
-        <p><strong>Large-scale emotional training does not consistently help.</strong> Training on AffectDF improves robustness under emotional conditions but causes sharp degradation on conventional benchmarks, indicating that SDD systems struggle to learn generalized spoof representations across emotional and prosodic variability.</p>
-      </div>
-      <div class="finding-card">
-        <p><strong>Robustness is emotion- and attack-dependent.</strong> No single emotion is consistently the hardest — the highest EER shifts across neutral, happy, angry, sad, and surprise depending on the model and training data. The acted vs. spontaneous gap is similarly architecture- and attack-dependent.</p>
-      </div>
-    </div>
-
     <!-- Tab bar -->
-    <div class="tab-bar" style="margin-top:36px;">
+    <div class="tab-bar" style="margin-top:8px;">
       <button class="tab-btn active" onclick="showTab('t2')">Table 2: Cross-Domain EER</button>
       <button class="tab-btn" onclick="showTab('t3')">Table 3: Emotion-wise EER</button>
       <button class="tab-btn" onclick="showTab('t4')">Table 4: LALM Inference</button>
@@ -437,6 +424,10 @@
 
     <!-- TABLE 2 -->
     <div id="t2" class="tab-panel active">
+      <div class="findings-grid" style="margin-bottom:20px;">
+        <div class="finding-card"><p><strong>Conventional training fails under emotional spoofing.</strong> ASVspoof2019-trained models perform well on ASVspoof2019/2021 but degrade sharply on AffectDF, with RawNet2 and AASIST reaching 59.71% and 56.40% EER. ASVspoof5 training improves AffectDF for some models, but remains inconsistent across architectures and collapses on EmoFake for several systems.</p></div>
+        <div class="finding-card"><p><strong>Emotional training does not guarantee generalization.</strong> Training on AffectDF improves some emotional-domain results, but sharply hurts performance on ASVspoof2019 and ASVspoof5 for nearly all models. This suggests current SDD systems still learn dataset- and attack-specific cues rather than transferable spoof representations.</p></div>
+      </div>
       <p class="paper-table-caption">Table 2: Cross-domain evaluation of SDD models trained on ASVspoof2019, ASVspoof5, and AffectDF. Results in EER (%).</p>
       <div class="paper-table-wrap">
         <table class="paper-table">
@@ -464,6 +455,10 @@
 
     <!-- TABLE 3 -->
     <div id="t3" class="tab-panel">
+      <div class="findings-grid" style="margin-bottom:20px;">
+        <div class="finding-card"><p><strong>Failure is emotion-dependent, but not emotion-specific.</strong> The highest EER shifts across neutral, happy, angry, sad, and surprise depending on the model and training data. This shows that no single emotion is universally hardest; failures arise from the interaction between emotional prosody, attack type, and detector architecture.</p></div>
+        <div class="finding-card"><p><strong>AffectDF training still leaves large emotion gaps.</strong> Even after training on emotionally expressive data, models show wide EER variation across emotions. This indicates that current detectors do not learn emotion-invariant spoof cues, even when exposed to balanced emotional training conditions.</p></div>
+      </div>
       <p class="paper-table-caption">Table 3: Emotion-wise EER (%) results. N = Neutral, H = Happy, A = Angry, S = Sad, Su = Surprise. EmoFake does not include Sad.</p>
       <div class="paper-table-wrap">
         <table class="paper-table">
@@ -505,6 +500,10 @@
 
     <!-- TABLE 4 -->
     <div id="t4" class="tab-panel">
+      <div class="findings-grid" style="margin-bottom:20px;">
+        <div class="finding-card"><p><strong>Prompting LALMs is insufficient for robust SDD.</strong> Qwen-2.5-Omni performs reasonably on ASVspoof2019 and EmoFake but degrades on ASVspoof5 and AffectDF, while Voxtral remains poor across nearly all benchmarks. General audio-language understanding does not directly translate to spoof detection.</p></div>
+        <div class="finding-card"><p><strong>LALM robustness is highly benchmark-dependent.</strong> Qwen-3.0-Omni performs better on ASVspoof5 than on ASVspoof2019 or AffectDF, showing unstable behavior across evaluation domains. This suggests inference-only LALMs remain sensitive to attack diversity and emotional variability.</p></div>
+      </div>
       <p class="paper-table-caption">Table 4: Inference-only evaluation of LALM models. Results in EER (%).</p>
       <div class="paper-table-wrap">
         <table class="paper-table" style="max-width:520px;">
@@ -520,6 +519,10 @@
 
     <!-- TABLE 5 -->
     <div id="t5" class="tab-panel">
+      <div class="findings-grid" style="margin-bottom:20px;">
+        <div class="finding-card"><p><strong>Speaking style alone does not explain difficulty.</strong> The acted–spontaneous gap changes by model and attack: ASVspoof2019-trained systems often struggle more on acted attacks, while ASVspoof5-trained systems show partial transfer to both acted and spontaneous conditions.</p></div>
+        <div class="finding-card"><p><strong>Emotional training is not style-invariant.</strong> Although AffectDF training uses acted emotional speech, several models perform better on spontaneous attacks than acted counterparts. Robustness depends on the source style, generation model, and detector architecture — not simply on whether emotional data was used in training.</p></div>
+      </div>
       <p class="paper-table-caption">Table 5: Attack-wise EER (%) for acted (A13, A18, A20) and spontaneous (A14, A19, A21) emotional speech generation systems. Overall = pooled EER.</p>
       <div class="paper-table-wrap">
         <table class="paper-table">
